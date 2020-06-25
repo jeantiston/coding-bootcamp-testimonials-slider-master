@@ -1,4 +1,9 @@
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
+    /* position: relative; */
     background-image: url("images/pattern-curve.svg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -6,35 +11,24 @@ body {
     background-size: 100% 10% ;
     color: hsl(240, 38%, 20%);
     font-family: 'Inter', sans-serif;
+    /* border: 5px solid red; */
+    font-size: 2vh;
+    text-align: center;
+    height: 100vh;
     display: flex;
-    align-items: stretch;
-    border: 5px solid yellowgreen;
-    /* max-width: 80vw; */
-    /* margin: auto; */
-
-}
-.wrap {
-    display: flex;
-    flex-direction: column;
-    /* min-width: 800px; */
     align-items: center;
-    justify-content: center;
-    max-width: 80vw;
     
-    
-    position: relative;
 }
 
- .wrap > * {
-    /* flex: 1 1 auto; */
-    
-    border: 5px solid goldenrod;
-}
+
+
 
 .photo {
-    width: 90%;
+    width: 70vw;
     height: auto;
-    border: 5px solid red;
+    border-radius: 5%;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.3);
+    
 }
 
 div.photo-wrap {
@@ -53,49 +47,59 @@ div.photo-wrap {
     position: absolute;
     left: 40%;
     top: 85%;
-    padding: 12px 10px;
+    padding: 13px 10px;
     background-color: white;
     border-radius: 50px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.3);
 
 }
 
 .nav > * {
     display: inline;
     position: relative;
-    /* width: 50px;
-    height: 50px; */
-    padding: 10px 10px 10px 20px;
-    /* background-color: white; */
-    
+    padding: 10px 10px 10px 10px;
 }
 
+.prev {
+    padding-right: 12px;
+}
 
+.next {
+    padding-left: 12px;
+}
 
-
-
-
-
-
-
-
-/*
-div.photo-wrap {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 5px solid goldenrod;
+div.content {
+    background-image: url("images/pattern-quotes.svg");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: top;
     
-    
-    padding: 50px;
 
+}
 
+.quote {
+    display: block;
+    padding: 3vh;
+}
 
- */
+.name {
+    display: block;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
 
+.role {
+    display: block;
+    color: hsl(240, 18%, 77%);
+}
 
-/* .photo {
-    width: 90vw;
-    height: auto;
-    border: 5px solid red;
-} */
+.attribution {
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    margin: 5px;
+    font-size: xx-small;
+    /* margin-top: auto; */
+}
