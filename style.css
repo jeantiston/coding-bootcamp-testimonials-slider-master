@@ -3,7 +3,7 @@ html, body {
   }
 
 body {
-    /* position: relative; */
+    position: relative;
     background-image: url("images/pattern-curve.svg");
     background-position: bottom;
     background-repeat: no-repeat;
