@@ -92,3 +92,30 @@ div.photo-wrap {
 
 
  */
+
+
+
+const photo = document.querySelector('.photo-wrap');
+let isDown = false;
+let startX;
+let scrollLeft;
+console.log(photo);
+
+photo.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.pageX;
+    console.log(startX);
+  });
+
+  photo.addEventListener('touchend', () => {
+    isDown = false;
+  });
+
+  photo.addEventListener('touchmove', (e) => {
+    if (!isDown) return;  // stop the fn from running
+    e.preventDefault();
+    const x = e.pageX;
+    const walk = (x - startX);
+    console.log('walk',walk);
+
+});
