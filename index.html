@@ -11,15 +11,20 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
 
 </head>
 <body>
   <div class="wrap">
   <div class="photo-wrap">
     <img class="photo" src="images/image-tanya.jpg" alt="Tanya Sinclair Portrait">
+    <img class="photo" src="images/image-john.jpg" alt="John Portrait" style="display: none;">
+    <img class="photo" src="images/image-mary.jpg" alt="Mary Portrait" style="display: none;">
+
+
     <div class="nav">
-      <div class="prev"><img src="images/icon-prev.svg" alt="previous button"></div>
-      <div class="next"><img src="images/icon-next.svg" alt="next button"></div>
+      <div class="prev" onclick="plusSlides(-1)"><img src="images/icon-prev.svg" alt="previous button"></div>
+      <div class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt="next button"></div>
     </div>
     
   </div>
@@ -27,25 +32,50 @@
   
   
   <div class="content">
+    <div class="testimonial">
+      <span class="quote">
+        “ I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+        excited about the future. ”
+      </span>
+      <span class="name">
+        Tanya Sinclair
+      </span>
+      <span class="role">
+        UX Engineer
+      </span>
+    </div>
+
+    <div class="testimonial" style="display: none;">
+      <span class="quote">
+        “ If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”
+      </span>
+      <span class="name">
+        John Tarkpor
+      </span>
+      <span class="role">
+        Junior Front-end Developer
+      </span>
+    </div>
+  </div>
+
+  <div class="testimonial" style="display: none;">
     <span class="quote">
-      “ I’ve been interested in coding for a while but never taken the jump, until now. 
-      I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-      excited about the future. ”
+      “ I love how this course has helped me to learn coding in a practical way.
+      I really enjoyed it and I'm sure you will also get value in it.
+      I can now use my graphic design skills to develop beautiful websites”
     </span>
     <span class="name">
-      Tanya Sinclair
+      Mary Gray
     </span>
     <span class="role">
-      UX Engineer
+      Graphic Designer
     </span>
+  </div>
 </div>
-<!-- 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
 
-  John Tarkpor
-  Junior Front-end Developer -->
   
 
 </div>
