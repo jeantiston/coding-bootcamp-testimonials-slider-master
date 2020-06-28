@@ -1,6 +1,15 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+let photo = document.getElementsByClassName("photo-wrap");
+
+photo.addEventlistener('touchstart', lock, false);
+photo.addEventlistener('touchend', move, false);
+
+function lock(e){
+    console.log(e);
+}
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
