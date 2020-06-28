@@ -1,14 +1,46 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-let photo = document.getElementsByClassName("photo-wrap");
+const photo = document.querySelector('.photo-wrap');
+let isDown = false;
+let startX;
+let scrollLeft;
+let walk;
+console.log(photo);
 
-photo.addEventlistener('touchstart', lock, false);
-photo.addEventlistener('touchend', move, false);
+photo.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].screenX;
+    console.log('start', e.touches[0].screenX);
+  });
 
-function lock(e){
-    console.log(e);
-}
+  photo.addEventListener('touchend', () => {
+    isDown = false;
+    console.log('walk', walk);
+    if (walk && walk > 0) {
+        plusSlides(-1);
+    }
+    else if(walk && walk < 0) {
+        plusSlides(1);
+    }
+  });
+
+  photo.addEventListener('touchmove', (e) => {
+    if (!isDown) return;  // stop the fn from running
+    e.preventDefault();
+    const x = e.touches[0].screenX;
+    walk = (x - startX);
+    console.log('move', e.touches[0].screenX);
+    
+
+});
+
+//  photo.addEventListener('mousedown', lock, false);
+
+// photo.addEventListener('mouseup', move, false);
+
+// photo.addEventlistener('touchend', move, false);
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
