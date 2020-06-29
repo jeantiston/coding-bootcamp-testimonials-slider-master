@@ -36,11 +36,6 @@ photo.addEventListener('touchstart', (e) => {
 
 });
 
-//  photo.addEventListener('mousedown', lock, false);
-
-// photo.addEventListener('mouseup', move, false);
-
-// photo.addEventlistener('touchend', move, false);
 
 //click nav
 const next = document.querySelector('.next');
