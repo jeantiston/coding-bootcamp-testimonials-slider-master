@@ -14,7 +14,7 @@ body {
     font-weight: 300;
     font-size: 2vh;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     
@@ -136,13 +136,17 @@ div.testimonial {
     .photo {
         width: 35vw;
         position: relative;
-        right: 100px;
+        right: 50px;
+    }
+
+    div.photo-wrap {
+        padding: 5%;
     }
 
     .quote {
         position: relative;
         left: 10vw;
-        min-width: 40vw;
+        width: 40vw;
     }
 
     div.person {
@@ -163,7 +167,7 @@ div.testimonial {
         display: float;
         position: absolute;
         left: 15%;
-        top: 80%;
+        top: 85%;
         padding: 13px 10px;
         background-color: white;
         border-radius: 50px;
