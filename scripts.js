@@ -1,6 +1,7 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+//swipe touch
 const photo = document.querySelector('.photo-wrap');
 let isDown = false;
 let startX;
@@ -40,6 +41,19 @@ photo.addEventListener('touchstart', (e) => {
 // photo.addEventListener('mouseup', move, false);
 
 // photo.addEventlistener('touchend', move, false);
+
+//click nav
+const next = document.querySelector('.next');
+console.log(next);
+next.addEventListener('click', () => {
+  plusSlides(1);
+});
+
+const prev = document.querySelector('.prev');
+console.log(prev);
+prev.addEventListener('click', function() {
+  plusSlides(-1);
+});
 
 
 function plusSlides(n) {
