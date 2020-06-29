@@ -1,3 +1,8 @@
+# Jean's Solution
+You can view the live site here: https://coding-bootcamp-testimonials-slider-master-brown.vercel.app/
+
+Mobile-first design with swipe touch navigation. Uses flexbox.
+
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
